@@ -9,7 +9,7 @@ def index():
     #'<a href = "./predict?text=exampletext"> ./predict?text=exampletext</a>'
 
 
-@app.route("/predict", methods = ['POST'])
+@app.route("/predict", methods = ['GET','POST'])
 def predict():
     """Takes a POST request with a key of \"text\" and the text to be classified."""
     age = request.form.get("age")
