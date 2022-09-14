@@ -13,4 +13,3 @@ threadpoolctl==2.1.0
 Werkzeug==2.0.1
 wincertstore==0.2
 imblearn == 0.0
-pickle == 1.2.3
