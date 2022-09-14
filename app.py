@@ -24,9 +24,9 @@ def predict():
     classifier_1 = load("classifier_1.pkl")
     prediction = classifier_1.predict([[age, sex, breed]])[0]
     if prediction == int(prediction)== 0 :
-        return render_template("index.html", prediction="Unavailable")
+        return render_template("index.html", prediction='Unavailable')
     else:
-        return render_template("index.html", prediction="Available")
+        return render_template("index.html", prediction='Available')
 
 
 if __name__ == "__main__":
