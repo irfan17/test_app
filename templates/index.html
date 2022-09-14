@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Furever Friends Shelter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background-color:lightskyblue;">
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://media.istockphoto.com/photos/banner-six-hungry-dogs-looking-up-begging-food-isolated-on-blue-picture-id1330020195?b=1&k=20&m=1330020195&s=170667a&w=0&h=T-go3J-ugW8786m7uacdBh4qZrQrfAOb9GbjD-CoqMY=');
+        background-size: cover; background-position: center; color: white">
+          <h1>Furever Friends Shelter</h1>
+          <p>Use the interactive tabs below to explore the available dogs in our shelter.</p>
+        </div>
+      <div>
+  <h2>Get to know our dogs</h2>
+   <img src="static\images\age.PNG" alt="Age" width="500" height="333">
+   <img src="static\images\gender.PNG" alt="gender" width="200" height="200">
+   <img src="static\images\breed.PNG" alt="Breed" width="150" height="300">
+   <br>
+    </h3 class="text center"> Our shelter is made up of dogs of all ages, genders and breeds.   </h3>
+  <h2 class="text-center">Adoption Event</h2>
+    </h3 class= "text-center">Furever Friends Shelter is hosting an adoption event for our recently rescued dogs. Enter the desired age, breed and sex of your next furever friend and our site will determine if they are available for immediate adoption. Help give these friends a chance at a happy life, adopt dont shop! </h3>
+
+  <form action="predict" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+    <br>
+    <label for="sex">sex</label>
+    <select id="sex" name="sex">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+    <br>
+    <label for="breed">Breed</label>
+    <select id="breed" name="breed">
+      <option value="0">Unknown Mix</option>
+      <option value="1">Known</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <br>
+</div>
+  <div class="row">
+    <div class="col-md-12">
+      <p> </h3> {{ prediction}}
+      </h3> </p>
+  </div>
+  </div>
+</div>
+<h2>Analysis</h2>
+<img src="static\images\overall_machine_learning.PNG" width="600" height="250" alt="machinelearning">
+<br>
+  </h3 class="text center"> While comparing the dogs time spent in a shelter against various characteristics such as age, breed and gender, we were able to determine whether or not they were still available for adoption.Using a logistic regression, our machine learning model is just over 82% accurate.  </h3>
+<h2> Conclusion</h2>
+<h4 class="text center"> Adopting a dog requires a lot of consideration on the part of the owner. While some dog characteristics have perceived influence over likelihood of being adopted, after the analysis one stood out as being a clear factor: age. The average life expectancy for dogs is 10-13 years. The longer they spend in a shelter, the odds go down they will find a forever home. Help give these friends a chance at a happy life, adopt dont shop! Or, perhaps consider fostering a shelter dog… every bit counts! </h4>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    
+  </body>
+</body>
+
+</html>
