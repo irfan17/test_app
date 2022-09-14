@@ -14,3 +14,4 @@ Werkzeug==2.0.1
 wincertstore==0.2
 imblearn == 0.0
 collections == 3.3
+pickle == 3.10
