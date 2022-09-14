@@ -3,13 +3,13 @@ from joblib import load
 
 app = Flask(__name__)
 
-@app.route('/', methods = ['POST'])
+@app.route('/')
 def index():
     return render_template("index.html") 
     #'<a href = "./predict?text=exampletext"> ./predict?text=exampletext</a>'
 
 
-@app.route('/predict', methods = ['POST'])
+@app.route('/predict', methods = ['GET','POST'])
 def predict():
     """Takes a POST request with a key of \"text\" and the text to be classified."""
     age = request.form.get("age")
